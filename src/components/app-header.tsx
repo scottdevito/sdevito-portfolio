@@ -5,7 +5,8 @@ import { colors } from "../styles/global-styles";
 export interface AppHeaderProps {}
 
 export const appHeaderHeight = `120px`;
-export const centerContentWidth = "65%";
+export const centerContentWidth = `65%`; //TODO Media query to 50% for 4k screens
+export const navLinksWidth = `40%`;
 
 const AppHeader: React.FC<AppHeaderProps> = () => {
   return (
@@ -60,7 +61,7 @@ const NavLinks = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 45%;
+  width: ${navLinksWidth};
 `;
 
 // Pass active prop
