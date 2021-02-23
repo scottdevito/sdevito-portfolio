@@ -10,6 +10,7 @@ import laptopAndMobile from "../../assets/images/laptopAndMobile.svg";
 import watermarkBgTexturePluses from "../../assets/images/watermarkBgTexturePluses.svg";
 import watermarkBgCircle from "../../assets/images/watermarkBgTextureCircle.svg";
 import watermarkBgTextureTriangle from "../../assets/images/watermarkBgTextureTriangle.svg";
+import { colors, ColorUnderline } from "../../styles/global-styles";
 
 export interface LandingSectionProps {}
 
@@ -21,7 +22,9 @@ const LandingSection: React.FC<LandingSectionProps> = () => {
         <TextureCircle src={watermarkBgCircle} />
         <TextureTriangle src={watermarkBgTextureTriangle} />
         <IntroAndCTAWrapper>
-          <Title>Front End Engineer</Title>
+          <Title>
+            Front End <ColorUnderline>Engineer</ColorUnderline>
+          </Title>
           <Copy>
             I use front end technologies to create tools that help people solve
             problems. Check out the link below to see what I've been up to.
