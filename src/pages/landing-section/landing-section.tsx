@@ -44,9 +44,9 @@ const LandingSectionWrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: calc(100vh - ${appHeaderHeight}); */
   width: 100%;
   background-color: #fff;
+  margin-bottom: -40%;
 `;
 
 const TopContentWrapper = styled.div`
@@ -83,9 +83,14 @@ const LaptopAndMobileWrapper = styled.div`
   width: ${navLinksWidth};
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  margin-bottom: 20px;
+`;
 
-const Copy = styled.p``;
+const Copy = styled.p`
+  margin-top: 0;
+  margin-bottom: 20px;
+`;
 
 const CTAButton = styled.button`
   background: linear-gradient(180deg, rgba(0, 255, 209, 0.84) 0%, #07ddeb 100%);
@@ -93,6 +98,10 @@ const CTAButton = styled.button`
   box-sizing: border-box;
   border-radius: 6px;
   padding: 10px 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const TexturePluses = styled.img`

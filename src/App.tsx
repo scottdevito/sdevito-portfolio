@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import AppHeader from "./components/app-header";
 import LandingSection from "./pages/landing-section/landing-section";
+import ProjectsSection from "./pages/projects-section/projects-section";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <AppHeader />
       <main style={{ width: "100%" }}>
         <LandingSection />
+        <ProjectsSection />
       </main>
     </AppWrapper>
   );
