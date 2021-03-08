@@ -23,11 +23,12 @@ const LandingSection: React.FC<LandingSectionProps> = () => {
         <TextureTriangle src={watermarkBgTextureTriangle} />
         <IntroAndCTAWrapper>
           <Title>
-            Front End <ColorUnderline>Engineer</ColorUnderline>
+            Front End <ColorUnderline>Software Engineer</ColorUnderline>
           </Title>
           <Copy>
-            I use front end technologies to create tools that help people solve
-            problems. Check out the link below to see what I've been up to.
+            I use web technologies to create tools that help people solve
+            problems. I enjoy the whole stack but love front end. Check out the
+            link below to see what I've been up to.
           </Copy>
           <CTAButton>View my work</CTAButton>
         </IntroAndCTAWrapper>
