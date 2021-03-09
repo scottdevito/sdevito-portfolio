@@ -5,6 +5,7 @@ export const colors = {
   lightGreen: "#00F4D9",
   lightBlue: "#CCDDFD",
   lightGray: "#CDCFD4",
+  spaceBlack: "#404040",
 };
 
 export const ColorUnderline: React.FC = (props): React.ReactElement => {
