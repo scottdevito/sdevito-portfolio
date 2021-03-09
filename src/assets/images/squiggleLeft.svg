@@ -1,9 +1,40 @@
 <svg width="563" height="1147" viewBox="0 0 563 1147" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M284 821C121.809 539.385 604.914 660.212 559.5 371.497C521.423 129.425 168.855 106.954 0 0V1147C127.277 1101.85 365.917 963.234 284 821Z" fill="url(#paint0_linear)"/>
+<rect x="140" y="176" width="70" height="190" rx="4" fill="url(#paint1_linear)"/>
+<rect x="159" y="244" width="51" height="10" rx="2" fill="#E5EEFE"/>
+<rect x="140" y="195" width="51" height="10" rx="2" fill="#E5EEFE"/>
+<rect x="160" y="261" width="33" height="10" rx="2" fill="#E5EEFE"/>
+<rect x="186" y="212" width="14" height="10" rx="2" fill="#E5EEFE"/>
+<rect x="140" y="159" width="70" height="21" rx="2" fill="#BFBEBE"/>
+<rect width="90" height="244.286" rx="4" transform="matrix(-1 0 0 1 175 260.857)" fill="url(#paint2_linear)"/>
+<rect width="65.5714" height="12.8571" rx="2" transform="matrix(-1 0 0 1 175.571 338.286)" fill="#E5EEFE"/>
+<rect width="65.5714" height="12.8571" rx="2" transform="matrix(-1 0 0 1 175 285.286)" fill="#E5EEFE"/>
+<rect width="42.4286" height="12.8571" rx="2" transform="matrix(-1 0 0 1 149.286 370.143)" fill="#E5EEFE"/>
+<rect width="18" height="12.8571" rx="2" transform="matrix(-1 0 0 1 115.857 307.143)" fill="#E5EEFE"/>
+<rect width="18" height="12.8571" rx="2" transform="matrix(-1 0 0 1 136.857 307.143)" fill="#E5EEFE"/>
+<rect width="90" height="27" rx="2" transform="matrix(-1 0 0 1 175 239)" fill="#BFBEBE"/>
+<rect x="193" y="239" width="70" height="190" rx="4" fill="url(#paint3_linear)"/>
+<rect x="244" y="285" width="51" height="10" rx="2" transform="rotate(-180 244 285)" fill="#E5EEFE"/>
+<rect x="263" y="334" width="51" height="10" rx="2" transform="rotate(-180 263 334)" fill="#E5EEFE"/>
+<rect x="243" y="268" width="33" height="10" rx="2" transform="rotate(-180 243 268)" fill="#E5EEFE"/>
+<rect x="217" y="317" width="14" height="10" rx="2" transform="rotate(-180 217 317)" fill="#E5EEFE"/>
+<rect x="193" y="222" width="70" height="21" rx="2" fill="#BFBEBE"/>
 <defs>
 <linearGradient id="paint0_linear" x1="281" y1="155" x2="281" y2="975" gradientUnits="userSpaceOnUse">
 <stop stop-color="#EAF3FF"/>
 <stop offset="1" stop-color="#F8FBFF"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="175" y1="176" x2="175" y2="366" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C4C4C4"/>
+<stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="45" y1="0" x2="45" y2="244.286" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C4C4C4"/>
+<stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint3_linear" x1="228" y1="239" x2="228" y2="429" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C4C4C4"/>
+<stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
 </linearGradient>
 </defs>
 </svg>
