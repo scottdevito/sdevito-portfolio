@@ -51,6 +51,7 @@ const LandingSectionWrapper = styled.section`
   width: 100%;
   background-color: #fff;
   margin-bottom: -40%;
+  min-height: calc(100vh - 120px);
 `;
 
 const TopContentWrapper = styled.div`
@@ -102,6 +103,7 @@ const CTAButton = styled.button`
   box-sizing: border-box;
   border-radius: 6px;
   padding: 10px 20px;
+  font-weight: 600;
 
   &:hover {
     cursor: pointer;
