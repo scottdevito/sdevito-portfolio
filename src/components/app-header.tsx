@@ -68,6 +68,7 @@ const NavLinks = styled.div`
 const NavLink = styled.a`
   margin: 0 5px;
   color: gray;
+  transition: 0.2s ease-in-out color;
 
   &:hover {
     cursor: pointer;

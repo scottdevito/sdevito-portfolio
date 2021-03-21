@@ -3,6 +3,9 @@ import styled from "styled-components";
 import { colors } from "../../styles/global-styles";
 import stars from "../../assets/images/stars.svg";
 import mountains from "../../assets/images/mountains.svg";
+import GitHubIcon from "../../assets/icons/githubIcon.svg";
+import PhoneIcon from "../../assets/icons/phoneIcon.svg";
+import LinkedInIcon from "../../assets/icons/linkedInIcon.svg";
 
 export interface ContactSectionProps {}
 
@@ -12,7 +15,33 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
       <AmbientLightWrapper>
         <Stars src={stars} alt="stars" />
         <Mountains src={mountains} alt="mountains" />
-        <Footer />
+        <Footer>
+          <ContactLinksWrapper>
+            <ContactLinkWrapper
+              href="https://github.com/scottdevito"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <ContactIcon src={GitHubIcon} alt="GitHub icon" />
+              <ContactLink>github.com/scottdevito</ContactLink>
+            </ContactLinkWrapper>
+            <ContactLinkWrapper
+              href="Tel: 516-476-0877"
+              rel="noreferrer noopener"
+            >
+              <ContactIcon src={PhoneIcon} alt="Phone number icon" />
+              <ContactLink>516-476-0877</ContactLink>
+            </ContactLinkWrapper>
+            <ContactLinkWrapper
+              href="https://linkedin.com/in/scott-devito/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <ContactIcon src={LinkedInIcon} alt="LinkedIn icon" />
+              <ContactLink>linkedin.com/in/scott-devito</ContactLink>
+            </ContactLinkWrapper>
+          </ContactLinksWrapper>
+        </Footer>
       </AmbientLightWrapper>
     </ContactSectionWrapper>
   );
@@ -65,7 +94,43 @@ const Mountains = styled.img`
 `;
 
 const Footer = styled.div`
-  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
   width: 100%;
   background-color: #b881ff;
+`;
+
+const ContactLinksWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+`;
+
+const ContactLinkWrapper = styled.a`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s ease-in-out color;
+
+  &:hover {
+    color: ${colors.spaceBlack};
+  }
+`;
+
+const ContactIcon = styled.img`
+  margin-right: 10px;
+`;
+
+const ContactLink = styled.p`
+  font-size: 20px;
+  margin: 0;
 `;
