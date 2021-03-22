@@ -11,7 +11,7 @@ function App() {
   return (
     <AppWrapper className="App">
       <AppHeader />
-      <main style={{ width: "100%" }}>
+      <main style={{ width: "100%", height: "100%" }}>
         <LandingSection />
         <ProjectsSection />
         <ExperienceSection />
