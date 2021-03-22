@@ -72,7 +72,15 @@ const AmbientLightWrapper = styled.div`
 const Stars = styled.img`
   width: 100%;
   max-width: 100%;
-  transform: translateY(100px);
+  transform: translateY(160px);
+
+  @media (min-width: 2200px) {
+    transform: translateY(220px);
+  }
+
+  @media (min-width: 3000px) {
+    transform: translateY(300px);
+  }
 `;
 
 const Mountains = styled.img`

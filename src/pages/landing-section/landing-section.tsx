@@ -60,16 +60,19 @@ const TopContentWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: ${centerContentWidth};
-  height: 50%;
+  height: 80%;
   min-height: 80%;
   z-index: 2;
   margin-top: 1%;
   position: relative;
+  transform: translateY(40px);
 `;
 
 const BlueMountainsBg = styled.img`
+  min-height: 100vh;
+  min-width: 100%;
   width: 100%;
-  transform: translateY(-14%);
+  transform: translateY(-10%);
 `;
 
 const IntroAndCTAWrapper = styled.div`
