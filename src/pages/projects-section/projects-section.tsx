@@ -75,7 +75,7 @@ const ProjectsSectionWrapper = styled.section`
   min-height: 165vh;
   z-index: 2;
   position: relative;
-  margin-bottom: 25rem;
+  margin-bottom: 26rem;
 `;
 
 const SquiggleLeftImg = styled.img`
