@@ -15,6 +15,14 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
       <AmbientLightWrapper>
         <Stars src={stars} alt="stars" />
         <Mountains src={mountains} alt="mountains" />
+        <ContactCTAHeader>
+          Feel free to reach me{" "}
+          <YellowHighlight>
+            <MailToLink href="mailto: scottadevito@gmail.com">here</MailToLink>.
+          </YellowHighlight>{" "}
+          <br /> I'd be happy to hear from{" "}
+          <YellowHighlight>you.</YellowHighlight>
+        </ContactCTAHeader>
         <Footer>
           <ContactLinksWrapper>
             <ContactLinkWrapper
@@ -54,6 +62,7 @@ const ContactSectionWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
   min-height: 110vh;
   width: 100%;
   background-color: ${colors.spaceBlack};
@@ -141,4 +150,21 @@ const ContactIcon = styled.img`
 const ContactLink = styled.p`
   font-size: 20px;
   margin: 0;
+`;
+
+const ContactCTAHeader = styled.h1`
+  position: absolute;
+  bottom: 35%;
+  left: 35%;
+  font-size: 50px;
+  color: #fff;
+`;
+
+const YellowHighlight = styled.span`
+  color: ${colors.sunStarYellow};
+`;
+
+const MailToLink = styled.a`
+  text-decoration: none;
+  color: ${colors.sunStarYellow};
 `;
