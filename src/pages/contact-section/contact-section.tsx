@@ -16,7 +16,7 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
     <ContactSectionWrapper>
       <Parallax
         bgImage={starsWithoutGalaxy}
-        strength={200}
+        strength={210}
         renderLayer={() => (
           <AmbientLightWrapper>
             <Stars src={stars} alt="stars" />
