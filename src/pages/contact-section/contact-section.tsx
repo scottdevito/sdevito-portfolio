@@ -2,55 +2,66 @@ import * as React from "react";
 import styled from "styled-components";
 import { colors } from "../../styles/global-styles";
 import stars from "../../assets/images/stars.svg";
+import starsWithoutGalaxy from "../../assets/images/starsWithoutGalaxy.svg";
 import mountains from "../../assets/images/mountains.svg";
 import GitHubIcon from "../../assets/icons/githubIcon.svg";
 import PhoneIcon from "../../assets/icons/phoneIcon.svg";
 import LinkedInIcon from "../../assets/icons/linkedInIcon.svg";
+import { Parallax, Background } from "react-parallax";
 
 export interface ContactSectionProps {}
 
 const ContactSection: React.FC<ContactSectionProps> = () => {
   return (
     <ContactSectionWrapper>
-      <AmbientLightWrapper>
-        <Stars src={stars} alt="stars" />
-        <Mountains src={mountains} alt="mountains" />
-        <ContactCTAHeader>
-          Feel free to reach me{" "}
-          <YellowHighlight>
-            <MailToLink href="mailto: scottadevito@gmail.com">here</MailToLink>.
-          </YellowHighlight>{" "}
-          <br /> I'd be happy to hear from{" "}
-          <YellowHighlight>you.</YellowHighlight>
-        </ContactCTAHeader>
-        <Footer>
-          <ContactLinksWrapper>
-            <ContactLinkWrapper
-              href="https://github.com/scottdevito"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <ContactIcon src={GitHubIcon} alt="GitHub icon" />
-              <ContactLink>github.com/scottdevito</ContactLink>
-            </ContactLinkWrapper>
-            <ContactLinkWrapper
-              href="Tel: 516-476-0877"
-              rel="noreferrer noopener"
-            >
-              <ContactIcon src={PhoneIcon} alt="Phone number icon" />
-              <ContactLink>516-476-0877</ContactLink>
-            </ContactLinkWrapper>
-            <ContactLinkWrapper
-              href="https://linkedin.com/in/scott-devito/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <ContactIcon src={LinkedInIcon} alt="LinkedIn icon" />
-              <ContactLink>linkedin.com/in/scott-devito</ContactLink>
-            </ContactLinkWrapper>
-          </ContactLinksWrapper>
-        </Footer>
-      </AmbientLightWrapper>
+      <Parallax
+        bgImage={starsWithoutGalaxy}
+        strength={200}
+        renderLayer={() => (
+          <AmbientLightWrapper>
+            <Stars src={stars} alt="stars" />
+            <Mountains src={mountains} alt="mountains" />
+            <ContactCTAHeader>
+              Feel free to reach me{" "}
+              <YellowHighlight>
+                <MailToLink href="mailto: scottadevito@gmail.com">
+                  here
+                </MailToLink>
+                .
+              </YellowHighlight>{" "}
+              <br /> I'd be happy to hear from{" "}
+              <YellowHighlight>you.</YellowHighlight>
+            </ContactCTAHeader>
+            <Footer>
+              <ContactLinksWrapper>
+                <ContactLinkWrapper
+                  href="https://github.com/scottdevito"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <ContactIcon src={GitHubIcon} alt="GitHub icon" />
+                  <ContactLink>github.com/scottdevito</ContactLink>
+                </ContactLinkWrapper>
+                <ContactLinkWrapper
+                  href="Tel: 516-476-0877"
+                  rel="noreferrer noopener"
+                >
+                  <ContactIcon src={PhoneIcon} alt="Phone number icon" />
+                  <ContactLink>516-476-0877</ContactLink>
+                </ContactLinkWrapper>
+                <ContactLinkWrapper
+                  href="https://linkedin.com/in/scott-devito/"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <ContactIcon src={LinkedInIcon} alt="LinkedIn icon" />
+                  <ContactLink>linkedin.com/in/scott-devito</ContactLink>
+                </ContactLinkWrapper>
+              </ContactLinksWrapper>
+            </Footer>
+          </AmbientLightWrapper>
+        )}
+      ></Parallax>
     </ContactSectionWrapper>
   );
 };
@@ -81,7 +92,7 @@ const AmbientLightWrapper = styled.div`
 const Stars = styled.img`
   width: 100%;
   max-width: 100%;
-  transform: translateY(160px);
+  transform: translateY(220px);
 
   @media (min-width: 2200px) {
     transform: translateY(220px);
