@@ -1,16 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import {
-  appHeaderHeight,
-  centerContentWidth,
-  navLinksWidth,
-} from "../../components/app-header";
+import { centerContentWidth, navLinksWidth } from "../../components/app-header";
 import landingPageBg from "../../assets/images/landingPageBg.svg";
 import laptopAndMobile from "../../assets/images/laptopAndMobile.svg";
 import watermarkBgTexturePluses from "../../assets/images/watermarkBgTexturePluses.svg";
 import watermarkBgCircle from "../../assets/images/watermarkBgTextureCircle.svg";
 import watermarkBgTextureTriangle from "../../assets/images/watermarkBgTextureTriangle.svg";
-import { colors, ColorUnderline } from "../../styles/global-styles";
+import { ColorUnderline } from "../../styles/global-styles";
 
 export interface LandingSectionProps {}
 

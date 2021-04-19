@@ -7,7 +7,7 @@ import mountains from "../../assets/images/mountains.svg";
 import GitHubIcon from "../../assets/icons/githubIcon.svg";
 import PhoneIcon from "../../assets/icons/phoneIcon.svg";
 import LinkedInIcon from "../../assets/icons/linkedInIcon.svg";
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 
 export interface ContactSectionProps {}
 
