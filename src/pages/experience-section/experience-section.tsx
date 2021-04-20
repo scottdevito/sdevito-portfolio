@@ -13,8 +13,6 @@ export interface ExperienceSectionProps {}
 const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
   return (
     <ExperienceSectionWrapper>
-      {/* <SpaceshipWrapper> */}
-
       <SpaceshipSequenceWrapper3>
         <SpaceshipSequence
           src={spaceshipPhase3}
@@ -40,6 +38,15 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
             Applied Visions:{" "}
             <ColorUnderline>Front End Engineer/Manager</ColorUnderline>
           </ContentSectionHeader>
+          <LessonsLearnedHeader>Lessons Learned:</LessonsLearnedHeader>
+          <LessonsLearnedCopy>
+            Bootstrapping, trade-offs, pivoting, leading by mentoring and
+            delegating
+          </LessonsLearnedCopy>
+          <ConceptsHeader>Concepts:</ConceptsHeader>
+          <ConceptsCopy>
+            Javascript, React, GraphQL, CSS Grid, reusability systems
+          </ConceptsCopy>
         </ExperienceCardContentSection>
       </ExperienceCard3>
       <ExperienceCard2>
@@ -48,6 +55,8 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
           <ContentSectionHeader>
             Long Island JavaScript Meetup:{" "}
             <ColorUnderline>Co-organizer</ColorUnderline>
+            <LessonsLearnedHeader>Lessons Learned:</LessonsLearnedHeader>
+            <ConceptsHeader>Concepts:</ConceptsHeader>
           </ContentSectionHeader>
         </ExperienceCardContentSection>
       </ExperienceCard2>
@@ -58,6 +67,15 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
             Bethpage Credit Union:{" "}
             <ColorUnderline>IT Analyst/Team Lead</ColorUnderline>
           </ContentSectionHeader>
+          <LessonsLearnedHeader>Lessons Learned:</LessonsLearnedHeader>
+          <LessonsLearnedCopy>
+            Project ownership, mentoring, leading by doing, getting unstuck,
+            troubleshooting under pressure
+          </LessonsLearnedCopy>
+          <ConceptsHeader>Concepts:</ConceptsHeader>
+          <ConceptsCopy>
+            Agile, infosec, networking, project lifecycle management
+          </ConceptsCopy>
         </ExperienceCardContentSection>
       </ExperienceCard1>
     </ExperienceSectionWrapper>
@@ -148,4 +166,22 @@ const ExperienceCardContentSection = styled.section`
   padding: 0 1.5rem;
 `;
 
-const ContentSectionHeader = styled.h3``;
+const ContentSectionHeader = styled.h3`
+  margin-bottom: 0.25rem;
+`;
+
+const LessonsLearnedHeader = styled.h4`
+  margin-bottom: 10px;
+`;
+
+const LessonsLearnedCopy = styled.p`
+  margin: 0;
+`;
+
+const ConceptsHeader = styled.h4`
+  margin-bottom: 10px;
+`;
+
+const ConceptsCopy = styled.p`
+  margin: 0;
+`;
