@@ -15,11 +15,12 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
   return (
     <ContactSectionWrapper>
       <Parallax
-        bgImage={starsWithoutGalaxy}
-        strength={210}
+        bgImage={stars}
+        strength={300}
+        bgImageStyle={{ opacity: 0.5 }}
         renderLayer={() => (
           <AmbientLightWrapper>
-            <Stars src={stars} alt="stars" />
+            <StarsWithoutGalaxy src={starsWithoutGalaxy} alt="stars" />
             <Mountains src={mountains} alt="mountains" />
             <ContactCTAHeader>
               Feel free to reach me{" "}
@@ -89,10 +90,11 @@ const AmbientLightWrapper = styled.div`
   );
 `;
 
-const Stars = styled.img`
+const StarsWithoutGalaxy = styled.img`
   width: 100%;
   max-width: 100%;
   transform: translateY(220px);
+  opacity: 0.3;
 
   @media (min-width: 2200px) {
     transform: translateY(220px);
