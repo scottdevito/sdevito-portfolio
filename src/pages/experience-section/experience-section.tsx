@@ -7,10 +7,37 @@ import spaceshipPhase3 from "../../assets/images/spaceshipPhase3.svg";
 import aviPic from "../../assets/images/aviPic.png";
 import lijsPic from "../../assets/images/lijsPic.png";
 import bpgPic from "../../assets/images/bpgPic.png";
+import arrowDown from "../../assets/icons/ArrowDown.svg";
+import northportBg from "../../assets/images/northportBG.png";
+import aviLogo from "../../assets/images/aviLogo.png";
 
 export interface ExperienceSectionProps {}
 
 const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
+  const [companyHoverCardActive, setCompanyHoverCardActive] = React.useState<{
+    [id: number]: boolean;
+  }>({
+    0: false,
+    1: false,
+    2: false,
+  });
+
+  const handleCompanyMouseOver = (companyInfoId: number) => {
+    const newHoverState = {
+      ...companyHoverCardActive,
+      [companyInfoId]: true,
+    };
+    setCompanyHoverCardActive(newHoverState);
+  };
+
+  const handleCompanyMouseLeave = (companyInfoId: number) => {
+    const newHoverState = {
+      ...companyHoverCardActive,
+      [companyInfoId]: false,
+    };
+    setCompanyHoverCardActive(newHoverState);
+  };
+
   return (
     <ExperienceSectionWrapper>
       <SpaceshipSequenceWrapper3>
@@ -34,7 +61,10 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
       <ExperienceCard3>
         <ExperienceCardPic src={aviPic} alt="AVI pic" />
         <ExperienceCardContentSection>
-          <ContentSectionHeader>
+          <ContentSectionHeader
+            onMouseOver={(): void => handleCompanyMouseOver(0)}
+            onMouseLeave={(): void => handleCompanyMouseLeave(0)}
+          >
             Applied Visions:{" "}
             <ColorUnderline>Front End Engineer/Manager</ColorUnderline>
           </ContentSectionHeader>
@@ -48,22 +78,65 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
             Javascript, React, GraphQL, CSS Grid, reusability systems
           </ConceptsCopy>
         </ExperienceCardContentSection>
+        {companyHoverCardActive[0] ? (
+          <CompanyHoverCardBGAccent>
+            <CompanyHoverCard>
+              <CompanyHoverCardLogoWrapper>
+                <CompanyHoverCardLogo src={aviLogo} alt="AVI Logo" />
+              </CompanyHoverCardLogoWrapper>
+              <CompanyHoverCardCopy>
+                Located in Northport, NY,{" "}
+                <span style={{ color: "#0048CF", fontWeight: "bold" }}>
+                  Applied Visions Inc.
+                </span>{" "}
+                is a software development company focused on creating innovative
+                solutions in cyber security, business systems, and command and
+                control systems for government and commercial customers
+                worldwide.
+              </CompanyHoverCardCopy>
+            </CompanyHoverCard>
+          </CompanyHoverCardBGAccent>
+        ) : null}
       </ExperienceCard3>
       <ExperienceCard2>
         <ExperienceCardPic src={lijsPic} alt="LIJS pic" />
         <ExperienceCardContentSection>
-          <ContentSectionHeader>
+          <ContentSectionHeader
+            onMouseOver={(): void => handleCompanyMouseOver(1)}
+            onMouseLeave={(): void => handleCompanyMouseLeave(1)}
+          >
             Long Island JavaScript Meetup:{" "}
             <ColorUnderline>Co-organizer</ColorUnderline>
-            <LessonsLearnedHeader>Lessons Learned:</LessonsLearnedHeader>
-            <ConceptsHeader>Concepts:</ConceptsHeader>
           </ContentSectionHeader>
+          <LessonsLearnedHeader>Lessons Learned:</LessonsLearnedHeader>
+          <ConceptsHeader>Concepts:</ConceptsHeader>
         </ExperienceCardContentSection>
+        {companyHoverCardActive[1] ? (
+          <CompanyHoverCardBGAccent>
+            <CompanyHoverCard>
+              <CompanyHoverCardLogoWrapper>
+                <CompanyHoverCardLogo src={aviLogo} alt="LIJS Logo" />
+              </CompanyHoverCardLogoWrapper>
+              <CompanyHoverCardCopy>
+                Located in Huntington, NY,{" "}
+                <span style={{ color: "#0048CF", fontWeight: "bold" }}>
+                  Long Island JavaScript
+                </span>{" "}
+                is a group of 550+ JavaScript Developers in the Long Island, NY
+                area. We meet on the last Wednesday of each month , where we
+                discuss a range of topics around the JavaScript ecosystem.
+              </CompanyHoverCardCopy>
+            </CompanyHoverCard>
+          </CompanyHoverCardBGAccent>
+        ) : null}
       </ExperienceCard2>
       <ExperienceCard1>
         <ExperienceCardPic src={bpgPic} alt="BPG pic" />
         <ExperienceCardContentSection>
-          <ContentSectionHeader>
+          <ContentSectionHeader
+            onMouseOver={(): void => handleCompanyMouseOver(2)}
+            onMouseLeave={(): void => handleCompanyMouseLeave(2)}
+          >
             Bethpage Credit Union:{" "}
             <ColorUnderline>IT Analyst/Team Lead</ColorUnderline>
           </ContentSectionHeader>
@@ -77,6 +150,24 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
             Agile, infosec, networking, project lifecycle management
           </ConceptsCopy>
         </ExperienceCardContentSection>
+        {companyHoverCardActive[2] ? (
+          <CompanyHoverCardBGAccent>
+            <CompanyHoverCard>
+              <CompanyHoverCardLogoWrapper>
+                <CompanyHoverCardLogo src={aviLogo} alt="LIJS Logo" />
+              </CompanyHoverCardLogoWrapper>
+              <CompanyHoverCardCopy>
+                Located in Bethpage, NY,{" "}
+                <span style={{ color: "#0048CF", fontWeight: "bold" }}>
+                  Bethpage Federal Credit Union
+                </span>{" "}
+                is a group of 550+ JavaScript Developers in the Long Island, NY
+                area. We meet on the last Wednesday of each month , where we
+                discuss a range of topics around the JavaScript ecosystem.
+              </CompanyHoverCardCopy>
+            </CompanyHoverCard>
+          </CompanyHoverCardBGAccent>
+        ) : null}
       </ExperienceCard1>
     </ExperienceSectionWrapper>
   );
@@ -131,6 +222,7 @@ const ExperienceCard = styled.div`
   height: 400px;
   background-color: #fff;
   border-radius: 8px;
+  position: relative;
 `;
 
 const ExperienceCard3 = styled(ExperienceCard)`
@@ -168,6 +260,10 @@ const ExperienceCardContentSection = styled.section`
 
 const ContentSectionHeader = styled.h3`
   margin-bottom: 0.25rem;
+
+  &:hover {
+    cursor: default;
+  }
 `;
 
 const LessonsLearnedHeader = styled.h4`
@@ -184,4 +280,65 @@ const ConceptsHeader = styled.h4`
 
 const ConceptsCopy = styled.p`
   margin: 0;
+`;
+
+const CompanyHoverCard = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #e6e8ec;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 3px solid #000;
+  transform: translate(-20px, -20px);
+  background-image: url(${northportBg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease-in-out all;
+
+  &::after {
+    content: "";
+    background-image: url(${arrowDown});
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: -28px;
+    right: 0;
+  }
+`;
+
+const CompanyHoverCardCopy = styled.p`
+  flex: 1;
+  margin-right: 20px;
+`;
+
+const CompanyHoverCardLogo = styled.img``;
+
+const CompanyHoverCardLogoWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+`;
+
+const CompanyHoverCardBGAccent = styled.div`
+  position: absolute;
+  top: -235px;
+  right: 0;
+  width: 700px;
+  height: 200px;
+  background-color: #ffcece;
+  transform: translate(20px, 20px);
+  overflow: visible;
+
+  @media (max-width: 750px) {
+    display: none;
+  }
 `;
