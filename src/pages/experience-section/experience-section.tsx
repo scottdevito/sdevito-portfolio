@@ -109,7 +109,15 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
             <ColorUnderline>Co-organizer</ColorUnderline>
           </ContentSectionHeader>
           <LessonsLearnedHeader>Lessons Learned:</LessonsLearnedHeader>
+          <LessonsLearnedCopy>
+            Community organization, presentation planning and the importance of
+            plan b's (and c's), advertising
+          </LessonsLearnedCopy>
           <ConceptsHeader>Concepts:</ConceptsHeader>
+          <ConceptsCopy>
+            Teaching, mentoring, public speaking, Javascript fundamentals,
+            React, GraphQL, blockchain
+          </ConceptsCopy>
         </ExperienceCardContentSection>
         {companyHoverCardActive[1] ? (
           <CompanyHoverCardBGAccent>
