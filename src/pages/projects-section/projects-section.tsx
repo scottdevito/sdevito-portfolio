@@ -19,9 +19,9 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
             <ColorUnderline>TS/React/GQL</ColorUnderline>
           </ProjectHeader>
           <ProjectCopy>
-            Here’s some great realestate to explain the high-level details. This
-            could be a combination of technologies, skillset, and creativity
-            you’re able to showcase.
+            A robust web app with a microservices architecture built to
+            facilitate the management clients with complex facilities anywhere
+            in the world.
           </ProjectCopy>
           <ProjectImg
             src={FacilityManagementWebAppPreview}
@@ -34,9 +34,9 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
             <ColorUnderline>JS/HTML/CSS</ColorUnderline>
           </ProjectHeader>
           <ProjectCopy>
-            Here’s some great realestate to explain the high-level details. This
-            could be a combination of technologies, skillset, and creativity
-            you’re able to showcase.
+            A cybersecurity training web app built to support the ongoing
+            dissemination of complex cybersecurity topics in a mission-critical
+            industry.
           </ProjectCopy>
           <ProjectImg
             src={CyberSecLearningPlatformPreview}
@@ -46,12 +46,11 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
         <Project3>
           <ProjectHeader>
             Emergency Vehicle Energy Management Web App:{" "}
-            <ColorUnderline>PHP/JS</ColorUnderline>
+            <ColorUnderline>JS/PHP</ColorUnderline>
           </ProjectHeader>
           <ProjectCopy>
-            Here’s some great realestate to explain the high-level details. This
-            could be a combination of technologies, skillset, and creativity
-            you’re able to showcase.
+            Web app with microservices architecture that allows companies to
+            automatically control the energy usage of their fleets of vehicles.
           </ProjectCopy>
           <ProjectImg
             src={FacilityManagementWebAppPreview}
