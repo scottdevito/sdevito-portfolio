@@ -123,7 +123,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
                   Long Island JavaScript
                 </span>{" "}
                 is a group of 550+ JavaScript Developers in the Long Island, NY
-                area. We meet on the last Wednesday of each month , where we
+                area. We meet on the last Wednesday of each month, where we
                 discuss a range of topics around the JavaScript ecosystem.
               </CompanyHoverCardCopy>
             </CompanyHoverCard>
@@ -161,9 +161,10 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
                 <span style={{ color: "#0048CF", fontWeight: "bold" }}>
                   Bethpage Federal Credit Union
                 </span>{" "}
-                is a group of 550+ JavaScript Developers in the Long Island, NY
-                area. We meet on the last Wednesday of each month , where we
-                discuss a range of topics around the JavaScript ecosystem.
+                is a not for profit organization that provides banking services
+                to its members. Named the largest credit union of the Northeast
+                in 2003, they've expanded to a national charter and now do
+                business across the continental US.
               </CompanyHoverCardCopy>
             </CompanyHoverCard>
           </CompanyHoverCardBGAccent>
