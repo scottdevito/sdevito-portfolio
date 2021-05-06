@@ -232,6 +232,10 @@ const ExperienceCard = styled.div`
   background-color: #fff;
   border-radius: 8px;
   position: relative;
+
+  @media (max-width: 2000px) {
+    width: 100%;
+  }
 `;
 
 const ExperienceCard3 = styled(ExperienceCard)`
