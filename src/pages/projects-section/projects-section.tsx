@@ -141,6 +141,7 @@ const ProjectHeader = styled.h3``;
 
 const ProjectCopy = styled.p`
   max-width: 95%;
+  margin-top: 0;
 `;
 
 const ProjectImg = styled.img`
