@@ -19,7 +19,6 @@ const AppHeader: React.FC<AppHeaderProps> = () => {
           </span>
         </HomeLink>
         <NavLinks>
-          <NavLink>Landing</NavLink>
           <NavLink>Projects</NavLink>
           <NavLink>Experiences</NavLink>
           <NavLink>Contact</NavLink>

@@ -10,6 +10,8 @@ import bpgPic from "../../assets/images/bpgPic.png";
 import arrowDown from "../../assets/icons/ArrowDown.svg";
 import northportBg from "../../assets/images/northportBG.png";
 import aviLogo from "../../assets/images/aviLogo.png";
+import lijsLogo from "../../assets/images/lijsLogo.png";
+import bpgLogo from "../../assets/images/bpgLogo.png";
 
 export interface ExperienceSectionProps {}
 
@@ -123,7 +125,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
           <CompanyHoverCardBGAccent>
             <CompanyHoverCard>
               <CompanyHoverCardLogoWrapper>
-                <CompanyHoverCardLogo src={aviLogo} alt="LIJS Logo" />
+                <CompanyHoverCardLogo src={lijsLogo} alt="LIJS Logo" />
               </CompanyHoverCardLogoWrapper>
               <CompanyHoverCardCopy>
                 Located in Huntington, NY,{" "}
@@ -150,19 +152,17 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
           </ContentSectionHeader>
           <LessonsLearnedHeader>Lessons Learned:</LessonsLearnedHeader>
           <LessonsLearnedCopy>
-            Project ownership, mentoring, leading by doing, getting unstuck,
+            Project ownership, getting unstuck, leading by doing,
             troubleshooting under pressure
           </LessonsLearnedCopy>
           <ConceptsHeader>Concepts:</ConceptsHeader>
-          <ConceptsCopy>
-            Agile, infosec, networking, project lifecycle management
-          </ConceptsCopy>
+          <ConceptsCopy>Agile, InfoSec, networking</ConceptsCopy>
         </ExperienceCardContentSection>
         {companyHoverCardActive[2] ? (
           <CompanyHoverCardBGAccent>
             <CompanyHoverCard>
               <CompanyHoverCardLogoWrapper>
-                <CompanyHoverCardLogo src={aviLogo} alt="LIJS Logo" />
+                <CompanyHoverCardLogo src={bpgLogo} alt="BPG Logo" />
               </CompanyHoverCardLogoWrapper>
               <CompanyHoverCardCopy>
                 Located in Bethpage, NY,{" "}
