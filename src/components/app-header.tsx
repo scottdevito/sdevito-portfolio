@@ -45,6 +45,10 @@ const HeaderContentWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: ${centerContentWidth};
+
+  @media (max-width: 1250px) {
+    width: 80%;
+  }
 `;
 
 const HomeLink = styled.h3`

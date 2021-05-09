@@ -78,6 +78,10 @@ const ContactSectionWrapper = styled.div`
   min-height: 110vh;
   width: 100%;
   background-color: ${colors.spaceBlack};
+
+  @media (max-width: 1500px) {
+    min-height: initial;
+  }
 `;
 
 const AmbientLightWrapper = styled.div`
@@ -171,6 +175,10 @@ const ContactCTAHeader = styled.h1`
   left: 35%;
   font-size: 50px;
   color: #fff;
+
+  @media (max-width: 1100px) {
+    left: 15%;
+  }
 `;
 
 const YellowHighlight = styled.span`

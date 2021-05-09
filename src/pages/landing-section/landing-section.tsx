@@ -62,6 +62,10 @@ const TopContentWrapper = styled.div`
   margin-top: 1%;
   position: relative;
   transform: translateY(40px);
+
+  @media (max-width: 1250px) {
+    width: 80%;
+  }
 `;
 
 const BlueMountainsBg = styled.img`

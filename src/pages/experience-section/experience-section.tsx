@@ -42,24 +42,6 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
 
   return (
     <ExperienceSectionWrapper>
-      <SpaceshipSequenceWrapper3>
-        <SpaceshipSequence
-          src={spaceshipPhase3}
-          alt="Space ship launch phase 3"
-        />
-      </SpaceshipSequenceWrapper3>
-      <SpaceshipSequenceWrapper2>
-        <SpaceshipSequence
-          src={spaceshipPhase2}
-          alt="Space ship launch phase 2"
-        />
-      </SpaceshipSequenceWrapper2>
-      <SpaceshipSequenceWrapper1>
-        <SpaceshipSequence
-          src={spaceshipPhase1}
-          alt="Space ship launch phase 1"
-        />
-      </SpaceshipSequenceWrapper1>
       <ExperienceCard3>
         <ExperienceCardPic src={aviPic} alt="AVI pic" />
         <ExperienceCardContentSection>
@@ -100,6 +82,12 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
           </CompanyHoverCardBGAccent>
         ) : null}
       </ExperienceCard3>
+      <SpaceshipSequenceWrapper3>
+        <SpaceshipSequence
+          src={spaceshipPhase3}
+          alt="Space ship launch phase 3"
+        />
+      </SpaceshipSequenceWrapper3>
       <ExperienceCard2>
         <ExperienceCardPic src={lijsPic} alt="LIJS pic" />
         <ExperienceCardContentSection>
@@ -140,6 +128,12 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
           </CompanyHoverCardBGAccent>
         ) : null}
       </ExperienceCard2>
+      <SpaceshipSequenceWrapper2>
+        <SpaceshipSequence
+          src={spaceshipPhase2}
+          alt="Space ship launch phase 2"
+        />
+      </SpaceshipSequenceWrapper2>
       <ExperienceCard1>
         <ExperienceCardPic src={bpgPic} alt="BPG pic" />
         <ExperienceCardContentSection>
@@ -178,6 +172,12 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
           </CompanyHoverCardBGAccent>
         ) : null}
       </ExperienceCard1>
+      <SpaceshipSequenceWrapper1>
+        <SpaceshipSequence
+          src={spaceshipPhase1}
+          alt="Space ship launch phase 1"
+        />
+      </SpaceshipSequenceWrapper1>
     </ExperienceSectionWrapper>
   );
 };
@@ -195,6 +195,15 @@ const ExperienceSectionWrapper = styled.section`
   height: 220vh;
   min-height: 220vh;
   background-color: ${colors.spaceBlack};
+
+  @media (max-width: 1150px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 10vh;
+    min-height: 300vh;
+  }
 `;
 
 const SpaceshipSequenceWrapper = styled.div`
@@ -235,6 +244,10 @@ const ExperienceCard = styled.div`
 
   @media (max-width: 2000px) {
     width: 100%;
+  }
+
+  @media (max-width: 1150px) {
+    width: 80%;
   }
 `;
 

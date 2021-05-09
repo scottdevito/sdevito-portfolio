@@ -81,6 +81,11 @@ const SquiggleLeftImg = styled.img`
   width: 25%;
   flex-grow: 1;
   z-index: 2;
+
+  @media (max-width: 1250px) {
+    display: none;
+    flex-grow: 0;
+  }
 `;
 
 const SquiggleRightImg = styled.img`
@@ -88,6 +93,11 @@ const SquiggleRightImg = styled.img`
   flex-grow: 1;
   z-index: 2;
   margin-top: 15%;
+
+  @media (max-width: 1250px) {
+    display: none;
+    flex-grow: 0;
+  }
 
   @media (min-width: 2000px) {
     margin-top: 8%;
@@ -107,6 +117,10 @@ const ProjectsWrapper = styled.div`
   height: 160vh;
   margin-bottom: 15rem;
   margin-top: 7rem;
+
+  @media (max-width: 1250px) {
+    margin-top: 0;
+  }
 `;
 
 const Project = styled.div`
