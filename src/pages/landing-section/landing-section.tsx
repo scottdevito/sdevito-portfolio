@@ -66,6 +66,10 @@ const TopContentWrapper = styled.div`
   @media (max-width: 1250px) {
     width: 80%;
   }
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+  }
 `;
 
 const BlueMountainsBg = styled.img`
@@ -73,6 +77,10 @@ const BlueMountainsBg = styled.img`
   min-width: 100%;
   width: 100%;
   transform: translateY(-10%);
+
+  @media (max-width: 880px) {
+    min-height: 50vh;
+  }
 `;
 
 const IntroAndCTAWrapper = styled.div`
@@ -117,12 +125,21 @@ const TexturePluses = styled.img`
   position: absolute;
   top: 12px;
   left: -100px;
+
+  @media (max-width: 880px) {
+    top: 60%;
+    left: -68px;
+  }
 `;
 
 const TextureCircle = styled.img`
   position: absolute;
   top: 44px;
   left: 55%;
+
+  @media (max-width: 880px) {
+    display: none;
+  }
 `;
 
 const TextureTriangle = styled.img`

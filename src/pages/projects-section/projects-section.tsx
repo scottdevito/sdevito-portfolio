@@ -161,4 +161,8 @@ const ProjectCopy = styled.p`
 const ProjectImg = styled.img`
   margin-top: 1em;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+
+  @media (max-width: 880px) {
+    max-width: 100%;
+  }
 `;
