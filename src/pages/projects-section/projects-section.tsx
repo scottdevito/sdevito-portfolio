@@ -5,6 +5,7 @@ import squiggleRight from "../../assets/images/squiggleRight.svg";
 import { ColorUnderline } from "../../styles/global-styles";
 import CyberSecLearningPlatformPreview from "../../assets/images/cyberSecLearningPlatformPreview.svg";
 import FacilityManagementWebAppPreview from "../../assets/images/facilityManagementWebAppPreview.svg";
+import EmergencyVehEnergyManWebAppPreview from "../../assets/images/emergencyVehEnergyManWebAppPreview.svg";
 
 export interface ProjectsSectionProps {}
 
@@ -49,11 +50,11 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
             <ColorUnderline>JS/PHP</ColorUnderline>
           </ProjectHeader>
           <ProjectCopy>
-            Web app with microservices architecture that allows companies to
+            A web app with microservices architecture that allows companies to
             automatically control the energy usage of their fleets of vehicles.
           </ProjectCopy>
           <ProjectImg
-            src={FacilityManagementWebAppPreview}
+            src={EmergencyVehEnergyManWebAppPreview}
             alt="Third project image"
           />
         </Project3>
