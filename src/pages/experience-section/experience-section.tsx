@@ -201,8 +201,13 @@ const ExperienceSectionWrapper = styled.section`
     flex-direction: column;
     align-items: center;
 
-    padding-bottom: 10vh;
-    min-height: 300vh;
+    padding-bottom: 15vh;
+    min-height: 340vh;
+  }
+
+  @media (max-width: 880px) {
+    min-height: 480vh;
+    padding-bottom: 20vh;
   }
 `;
 
@@ -249,6 +254,12 @@ const ExperienceCard = styled.div`
   @media (max-width: 1150px) {
     width: 80%;
   }
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+    height: initial;
+    padding: 0 10px 25px 25px;
+  }
 `;
 
 const ExperienceCard3 = styled(ExperienceCard)`
@@ -289,6 +300,11 @@ const ContentSectionHeader = styled.h3`
 
   &:hover {
     cursor: default;
+  }
+
+  @media (max-width: 880px) {
+    text-align: center;
+    width: 100%;
   }
 `;
 
