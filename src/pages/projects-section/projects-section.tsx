@@ -20,9 +20,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
             <ColorUnderline>TS/React/GQL</ColorUnderline>
           </ProjectHeader>
           <ProjectCopy>
-            A robust web app with a microservices architecture built to
-            facilitate the management clients with complex facilities anywhere
-            in the world.
+            A robust web app with a microservices architecture built to enable
+            clients to manage complex facilities anywhere in the world.
           </ProjectCopy>
           <ProjectImg
             src={FacilityManagementWebAppPreview}
@@ -36,8 +35,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
           </ProjectHeader>
           <ProjectCopy>
             A cybersecurity training web app built to support the ongoing
-            dissemination of complex cybersecurity topics in a mission-critical
-            industry.
+            dissemination of complex cybersecurity concepts in a
+            mission-critical industry.
           </ProjectCopy>
           <ProjectImg
             src={CyberSecLearningPlatformPreview}
