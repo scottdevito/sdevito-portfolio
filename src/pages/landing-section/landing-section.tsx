@@ -89,6 +89,11 @@ const IntroAndCTAWrapper = styled.div`
 
 const LaptopAndMobileImg = styled.img`
   width: 360px;
+
+  @media (max-width: 880px) {
+    width: 100%;
+    visibility: hidden;
+  }
 `;
 
 const LaptopAndMobileWrapper = styled.div`
@@ -127,7 +132,7 @@ const TexturePluses = styled.img`
   left: -100px;
 
   @media (max-width: 880px) {
-    top: 60%;
+    top: 80%;
     left: -68px;
   }
 `;
