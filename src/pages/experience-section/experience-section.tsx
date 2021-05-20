@@ -283,6 +283,11 @@ const ExperienceCardPic = styled.img`
   border-bottom-left-radius: 12px;
   height: 100%;
   border-radius: 12px;
+  height: 99%;
+
+  @media (max-width: 1150px) {
+    width: 80%;
+  }
 `;
 
 const ExperienceCardContentSection = styled.section`

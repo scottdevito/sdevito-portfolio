@@ -6,6 +6,7 @@ import { ColorUnderline } from "../../styles/global-styles";
 import CyberSecLearningPlatformPreview from "../../assets/images/cyberSecLearningPlatformPreview.svg";
 import FacilityManagementWebAppPreview from "../../assets/images/facilityManagementWebAppPreview.svg";
 import EmergencyVehEnergyManWebAppPreview from "../../assets/images/emergencyVehEnergyManWebAppPreview.svg";
+import InsuranceWebAppPreview from "../../assets/images/insuranceWebAppPreview.svg";
 
 export interface ProjectsSectionProps {}
 
@@ -35,8 +36,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
           </ProjectHeader>
           <ProjectCopy>
             A cybersecurity training web app built to support the ongoing
-            dissemination of complex cybersecurity concepts in a
-            mission-critical industry.
+            dissemination of cybersecurity concepts in a mission-critical
+            industry.
           </ProjectCopy>
           <ProjectImg
             src={CyberSecLearningPlatformPreview}
@@ -45,6 +46,20 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
         </Project2>
         <Project3>
           <ProjectHeader>
+            Commercial Insurance Management Web App:{" "}
+            <ColorUnderline>JS/HTML/CSS/C#</ColorUnderline>
+          </ProjectHeader>
+          <ProjectCopy>
+            A web app that enabled an insurance company to manage the commercial
+            real estate insurance process.
+          </ProjectCopy>
+          <ProjectImg
+            src={EmergencyVehEnergyManWebAppPreview}
+            alt="Third project image"
+          />
+        </Project3>
+        <Project4>
+          <ProjectHeader>
             Emergency Vehicle Energy Management Web App:{" "}
             <ColorUnderline>JS/PHP</ColorUnderline>
           </ProjectHeader>
@@ -52,11 +67,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
             A web app with microservices architecture that allows companies to
             automatically control the energy usage of their fleets of vehicles.
           </ProjectCopy>
-          <ProjectImg
-            src={EmergencyVehEnergyManWebAppPreview}
-            alt="Third project image"
-          />
-        </Project3>
+          <ProjectImg src={InsuranceWebAppPreview} alt="Fourth project image" />
+        </Project4>
       </ProjectsWrapper>
       <SquiggleRightImg src={squiggleRight} alt="right squiggle graphic" />
     </ProjectsSectionWrapper>
@@ -114,12 +126,26 @@ const ProjectsWrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-grow: 20;
-  height: 160vh;
+  height: 230vh;
   margin-bottom: 15rem;
   margin-top: 7rem;
 
+  @media (min-width: 2000px) {
+    height: 190vh;
+    margin-bottom: 20rem;
+  }
+
+  @media (max-width: 1600px) {
+    margin-bottom: 24rem;
+  }
+
   @media (max-width: 1250px) {
     margin-top: 0;
+    margin-bottom: 24rem;
+  }
+
+  @media (max-width: 800px) {
+    margin-bottom: 8rem;
   }
 `;
 
@@ -149,6 +175,15 @@ const Project3 = styled(Project)`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
+`;
+
+const Project4 = styled(Project)`
+  transform: translate(0vw, 76vh);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 `;
 
 const ProjectHeader = styled.h3``;

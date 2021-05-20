@@ -135,6 +135,11 @@ const Footer = styled.div`
   height: 55px;
   width: 100%;
   background-color: #b881ff;
+
+  @media (max-width: 800px) {
+    height: 20vh;
+    flex-direction: column;
+  }
 `;
 
 const ContactLinksWrapper = styled.div`
@@ -143,6 +148,10 @@ const ContactLinksWrapper = styled.div`
   justify-content: space-around;
   align-items: center;
   height: 100%;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const ContactLinkWrapper = styled.a`
@@ -167,6 +176,11 @@ const ContactIcon = styled.img`
 const ContactLink = styled.p`
   font-size: 20px;
   margin: 0;
+
+  @media (max-width: 1000px) {
+    font-weight: 700;
+    font-size: 16px;
+  }
 `;
 
 const ContactCTAHeader = styled.h1`
@@ -178,6 +192,15 @@ const ContactCTAHeader = styled.h1`
 
   @media (max-width: 1100px) {
     left: 15%;
+  }
+
+  @media (max-width: 1000px) {
+    left: 35%;
+    font-size: 24px;
+  }
+
+  @media (max-width: 800px) {
+    bottom: 50%;
   }
 `;
 
