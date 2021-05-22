@@ -31,8 +31,8 @@ const AppHeader: React.FC<AppHeaderProps> = () => {
           <NavLink
             onClick={() =>
               scroll.scrollToBottom({
-                smooth: true,
-                duration: scrollSpeed * 3.5,
+                smooth: "easeOutQuart",
+                duration: 12000,
               })
             }
           >
