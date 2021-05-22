@@ -1,12 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { centerContentWidth, navLinksWidth } from "../../components/app-header";
+import { centerContentWidth, navLinksWidth, scrollSpeed } from "../../consts";
 import landingPageBg from "../../assets/images/landingPageBg.svg";
 import laptopAndMobile from "../../assets/images/laptopAndMobile.svg";
 import watermarkBgTexturePluses from "../../assets/images/watermarkBgTexturePluses.svg";
 import watermarkBgCircle from "../../assets/images/watermarkBgTextureCircle.svg";
 import watermarkBgTextureTriangle from "../../assets/images/watermarkBgTextureTriangle.svg";
 import { ColorUnderline } from "../../styles/global-styles";
+import { Link } from "react-scroll";
 
 export interface LandingSectionProps {}
 
@@ -26,7 +27,9 @@ const LandingSection: React.FC<LandingSectionProps> = () => {
             problems. I enjoy the whole stack but love front end. Check out the
             link below to see what I've been up to.
           </Copy>
-          <CTAButton>View my work</CTAButton>
+          <Link to="projects" smooth={true} duration={scrollSpeed}>
+            <CTAButton>View my work</CTAButton>
+          </Link>
         </IntroAndCTAWrapper>
         <LaptopAndMobileWrapper>
           <LaptopAndMobileImg src={laptopAndMobile} />

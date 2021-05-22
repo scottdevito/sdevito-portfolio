@@ -12,7 +12,7 @@ export interface ProjectsSectionProps {}
 
 const ProjectsSection: React.FC<ProjectsSectionProps> = () => {
   return (
-    <ProjectsSectionWrapper>
+    <ProjectsSectionWrapper id="projects">
       <SquiggleLeftImg src={squiggleLeft} alt="left squiggle graphic" />
       <ProjectsWrapper>
         <Project1>

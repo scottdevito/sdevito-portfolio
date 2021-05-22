@@ -1,12 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
 import { colors } from "../styles/global-styles";
+import { Link, animateScroll as scroll } from "react-scroll";
+import {
+  appHeaderHeight,
+  centerContentWidth,
+  navLinksWidth,
+  scrollSpeed,
+} from "../consts";
 
 export interface AppHeaderProps {}
-
-export const appHeaderHeight = `120px`;
-export const centerContentWidth = `65%`;
-export const navLinksWidth = `40%`;
 
 const AppHeader: React.FC<AppHeaderProps> = () => {
   return (
@@ -19,9 +22,22 @@ const AppHeader: React.FC<AppHeaderProps> = () => {
           </span>
         </HomeLink>
         <NavLinks>
-          <NavLink>Projects</NavLink>
-          <NavLink>Experiences</NavLink>
-          <NavLink>Contact</NavLink>
+          <Link to="projects" smooth={true} duration={scrollSpeed}>
+            <NavLink>Projects</NavLink>
+          </Link>
+          <Link to="experiences" smooth={true} duration={scrollSpeed * 2}>
+            <NavLink>Experiences</NavLink>
+          </Link>
+          <NavLink
+            onClick={() =>
+              scroll.scrollToBottom({
+                smooth: true,
+                duration: scrollSpeed * 3.5,
+              })
+            }
+          >
+            Contact
+          </NavLink>
         </NavLinks>
       </HeaderContentWrapper>
     </HeaderWrapper>

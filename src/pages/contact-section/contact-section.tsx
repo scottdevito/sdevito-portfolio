@@ -13,7 +13,7 @@ export interface ContactSectionProps {}
 
 const ContactSection: React.FC<ContactSectionProps> = () => {
   return (
-    <ContactSectionWrapper>
+    <ContactSectionWrapper id="contact">
       <Parallax
         bgImage={stars}
         strength={300}

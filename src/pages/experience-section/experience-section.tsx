@@ -41,7 +41,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = () => {
   };
 
   return (
-    <ExperienceSectionWrapper>
+    <ExperienceSectionWrapper id="experiences">
       <ExperienceCard3>
         <ExperienceCardPic src={aviPic} alt="AVI pic" />
         <ExperienceCardContentSection>
