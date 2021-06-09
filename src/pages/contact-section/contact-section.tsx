@@ -16,6 +16,7 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
     <ContactSectionWrapper id="contact">
       <Parallax
         bgImage={stars}
+        bgClassName="stars-parallax-bg"
         strength={300}
         bgImageStyle={{ opacity: 0.5 }}
         renderLayer={() => (
@@ -28,7 +29,6 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
                 <MailToLink href="mailto: scottadevito@gmail.com">
                   here
                 </MailToLink>
-                .
               </YellowHighlight>{" "}
               <br /> I'd be happy to hear from{" "}
               <YellowHighlight>you.</YellowHighlight>
@@ -81,6 +81,12 @@ const ContactSectionWrapper = styled.div`
 
   @media (max-width: 1500px) {
     min-height: initial;
+  }
+
+  @media (max-width: 960px) {
+    .stars-parallax-bg {
+      display: none;
+    }
   }
 `;
 
@@ -195,12 +201,12 @@ const ContactCTAHeader = styled.h1`
   }
 
   @media (max-width: 1000px) {
-    left: 35%;
+    left: 25%;
     font-size: 24px;
   }
 
   @media (max-width: 800px) {
-    bottom: 50%;
+    bottom: 55%;
   }
 `;
 

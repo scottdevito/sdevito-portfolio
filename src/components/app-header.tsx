@@ -65,6 +65,10 @@ const HeaderContentWrapper = styled.div`
   @media (max-width: 1250px) {
     width: 80%;
   }
+
+  @media (max-width: 630px) {
+    flex-direction: column;
+  }
 `;
 
 const HomeLink = styled.h3`
