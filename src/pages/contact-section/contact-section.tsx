@@ -113,6 +113,10 @@ const StarsWithoutGalaxy = styled.img`
   @media (min-width: 3000px) {
     transform: translateY(300px);
   }
+
+  @media (max-width: 1000px) {
+    transform: translateY(100px);
+  }
 `;
 
 const Mountains = styled.img`
