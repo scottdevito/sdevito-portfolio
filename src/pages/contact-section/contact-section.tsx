@@ -44,11 +44,11 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
                   <ContactLink>github.com/scottdevito</ContactLink>
                 </ContactLinkWrapper>
                 <ContactLinkWrapper
-                  href="Tel: 516-476-0877"
+                  href="Tel: 516-478-0877"
                   rel="noreferrer noopener"
                 >
                   <ContactIcon src={PhoneIcon} alt="Phone number icon" />
-                  <ContactLink>516-476-0877</ContactLink>
+                  <ContactLink>516-478-0877</ContactLink>
                 </ContactLinkWrapper>
                 <ContactLinkWrapper
                   href="https://linkedin.com/in/scott-devito/"
